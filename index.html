@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Weizhe Li's Personal Website</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <h1>Hi, I'm <span>Weizhe Li</span></h1>
+                <p>AI Engineer & Deep Learning Enthusiast</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="chevron"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="section-title-container">
+                <h2>About <span>Me</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate AI and Deep Learning enthusiast with expertise in cutting-edge technologies.</p>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>AI & Machine Learning</h3>
+                        <ul>
+                            <li>Deep Learning & Neural Networks</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
+                            <li>Reinforcement Learning</li>
+                            <li>TensorFlow & PyTorch</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Programming</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                            <li>Git & Version Control</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Tools & Technologies</h3>
+                        <ul>
+                            <li>Docker & Kubernetes</li>
+                            <li>Cloud Platforms (AWS, GCP)</li>
+                            <li>MLOps & CI/CD</li>
+                            <li>Data Visualization</li>
+                            <li>RESTful APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="section-title-container">
+                <h2>My <span>Portfolio</span></h2>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+            </div>
+            <div class="portfolio-search">
+                <input type="text" id="project-search" placeholder="Search projects...">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="portfolio-container">
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="images/HPC_new.png" alt="AI Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/3dimaging/DeepLearningCamelyon" target="_blank" class="overlay-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Deep Learning Image Recognition</h3>
+                        <p>A real-time computer vision system that can detect and classify objects with 98% accuracy using custom-trained CNN architectures.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                            <span>CUDA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="images/nlp.jpg" alt="Chatbot Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project2" target="_blank" class="overlay-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Advanced NLP System</h3>
+                        <p>Transformer-based NLP system achieving state-of-the-art results in sentiment analysis and text classification tasks.</p>
+                        <div class="project-tech">
+                            <span>BERT</span>
+                            <span>TensorFlow</span>
+                            <span>Hugging Face</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/webdev.jpg" alt="Web Widget Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project3" target="_blank" class="overlay-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Web Platform</h3>
+                        <p>Full-stack web application featuring real-time AI processing, responsive design, and cloud integration.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="images/dataproject.jpg" alt="Data Analytics Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project4" target="_blank" class="overlay-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Big Data Analytics Platform</h3>
+                        <p>Scalable data processing pipeline handling millions of records with real-time visualization and analytics.</p>
+                        <div class="project-tech">
+                            <span>Apache Spark</span>
+                            <span>Python</span>
+                            <span>D3.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="research">
+                    <div class="project-image">
+                        <img src="images/nn.jpg" alt="Neural Network Research">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/research" target="_blank" class="overlay-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-badge">Research Paper</span>
+                        <h3>Novel Deep Learning Architecture</h3>
+                        <p>Published research on an innovative neural network architecture for efficient training on edge devices.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Research</span>
+                            <span>Edge AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="robotics">
+                    <div class="project-image">
+                        <img src="images/robotnavigation.jpg" alt="Autonomous Robot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/robotics" target="_blank" class="overlay-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="overlay-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-badge">Robotics</span>
+                        <h3>Autonomous Robot Navigation</h3>
+                        <p>Developed an AI-powered navigation system for autonomous robots using reinforcement learning.</p>
+                        <div class="project-tech">
+                            <span>ROS</span>
+                            <span>Python</span>
+                            <span>RL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-load-more">
+                <button id="load-more-btn">Load More Projects</button>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-title-container">
+                <h2>Get in <span>Touch</span></h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Weizhe Li</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
