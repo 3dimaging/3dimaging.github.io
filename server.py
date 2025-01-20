@@ -9,7 +9,19 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+
+# Configure CORS for GitHub Pages
+CORS(app, resources={
+    r"/api/*": {
+        "origins": [
+            "http://localhost:8000",
+            "http://127.0.0.1:8000",
+            "https://3dimaging.github.io"
+        ],
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type"]
+    }
+})
 
 # Get the environment
 ENV = os.getenv('FLASK_ENV', 'production')
