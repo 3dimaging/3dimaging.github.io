@@ -4,7 +4,7 @@ console.log('Welcome to Weizhe Li\'s personal website!');
 // Analytics tracking
 const API_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:5000/api'
-    : 'https://your-analytics-api.vercel.app/api'; // Replace with your actual Vercel deployment URL
+    : 'https://personal-website-analytics.vercel.app/api';
 
 async function trackVisit() {
     try {
